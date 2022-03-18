@@ -1,1 +1,1 @@
-Check out the minimal portfolio at https://chriskhanhtran.github.io/minimal-portfolio
+Check out my data science portfolio at https://lukaneg.github.io/
