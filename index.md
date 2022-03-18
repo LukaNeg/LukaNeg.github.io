@@ -4,7 +4,7 @@
 
 ### Category Name 1 
 
-[Project 1 Title](/sample_page)
+[test project](/projects/2022-01-17-finding-prime-numbers.md)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
