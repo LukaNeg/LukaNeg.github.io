@@ -1,18 +1,21 @@
-title: <p align="center" color="000000"> Luka Negoita </p>
+title: <p align="left"> Luka Negoita </p>
 
 logo: "/images/profile.jpg?raw=true"
 
 description:
   <p align="center">
-  <a href="pdf/resume.pdf">Resume</a> |
-  <a href="https://www.linkedin.com/in/chriskhanhtran/">LinkedIn</a> |
-  <a href="https://github.com/chriskhanhtran">GitHub</a>
+  <a href="pdf/Negoita_resume_08_07_20.pdf">Resume</a> |
+  <a href="https://www.linkedin.com/in/negoita/">LinkedIn</a> |
+  <a href="https://github.com/lukaneg">GitHub</a>
+  </p>
+  
+  <p align="center">
+  <a href="https://www.rforecology.com">I teach R for Ecology</a>
   </p>
   
   <p align="justify">
-  I am pursing MS degree in Business Analytics at Simon Business School, University of Rochester.
+  I believe the fundamental beauty of the world lies in the stories behind the patterns we see.
   <br><br>
-  I am currently a Machine Learning Research Intern at Skim AI Technologies with a focus on NLP and Deep Learning research.
   <br><br>
   </p>
   
