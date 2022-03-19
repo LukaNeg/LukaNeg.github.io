@@ -8,7 +8,7 @@
 
 <a href="https://community.rstudio.com/t/restor-shiny-contest-submission/104903"><img src = "https://img.shields.io/badge/RStudio-Open%20Blog%20Post-74aadb?logo=rstudio" alt = "Learn more here"></a>
 
-<a href="https://github.com/LukaNeg/gv2050-platform-submission"><img src = "https://img.shields.io/badge/GitHub-View%20Repository-1c7ebf?logo=github" alt = "Learn more here"></a>
+<a href="https://github.com/LukaNeg/gv2050-platform-submission"><img src = "https://img.shields.io/badge/GitHub-View%20Repository-92a536?logo=github" alt = "Learn more here"></a>
 </p>
 
 Here's a tool I built with Anna Calle (Charles Darwin Foundation) to make ecological restoration through adaptive management more efficient and cost-effective. Users will encounter features to facilitate every step of the restoration process, from planting and monitoring, to evaluating the progress toward restoration targets.
@@ -27,7 +27,7 @@ By comparing the biodiversity and composition of two ecosystems we can better un
 ## Are personality archetypes real?
 
 <p>
-<a href="https://lukanegoita.shinyapps.io/young_archetypes_of_slovakia/" target="_blank"><img src = "https://img.shields.io/badge/Shiny-Open%20Web%20App-1e64b6?logo=r" alt = "Visit the shiny app here"></a>
+<a href="https://lukanegoita.shinyapps.io/young_archetypes_of_slovakia/" target="_blank"><img src = "https://img.shields.io/badge/Shiny-Open%20Web%20App-92a536?logo=r" alt = "Visit the shiny app here"></a>
 </p>
 
 <center><img src="/images/archetypes_thumb.png"></center>
