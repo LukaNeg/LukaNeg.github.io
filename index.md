@@ -3,7 +3,9 @@
 ---
 ## Predicting the arrival of COVID-19 to the Galapagos Islands
 
+<p>
 <a href="/projects/coronavirus_analysis_v4.html"><img src = "https://img.shields.io/badge/RMarkdown-Open%20Report-e34d3f?logo=r" alt = "Learn more here"></a>
+</p>
 
 I was able to predict the arrival of COVID-19 to the local community of the Galapagos Islands, Ecuador. I used tourist visitation data to estimate various scenarios on the probability that the virus would reach the islands. My results concluded that a complete stop of incoming tourist flights would be the only way to delay arrival and reduce the curve. A complete lock-down of tourist travel to the islands was implemented within weeks of sharing my results—a decision that likely saved lives.
 ---
@@ -11,11 +13,11 @@ I was able to predict the arrival of COVID-19 to the local community of the Gala
 ## RestoR: an app for managing biodiversity restoration
 
 <p>
-<a href="https://gv2050.shinyapps.io/gv2050-platform-submission/" target="_blank"><img src = "https://img.shields.io/badge/Shiny-Open%20Web%20App-445017?logo=r" alt = "Visit the shiny app here"></a>
+<a href="https://gv2050.shinyapps.io/gv2050-platform-submission/" target="_blank"><img src = "https://img.shields.io/badge/Shiny-Open%20Web%20App-92a536?logo=r" alt = "Visit the shiny app here"></a>
 
 <a href="https://community.rstudio.com/t/restor-shiny-contest-submission/104903"><img src = "https://img.shields.io/badge/RStudio-Open%20Blog%20Post-74aadb?logo=rstudio" alt = "Learn more here"></a>
 
-<a href="https://github.com/LukaNeg/gv2050-platform-submission"><img src = "https://img.shields.io/badge/GitHub-View%20Repository-92a536?logo=github" alt = "Learn more here"></a>
+<a href="https://github.com/LukaNeg/gv2050-platform-submission"><img src = "https://img.shields.io/badge/GitHub-View%20Repository-1077b8?logo=github" alt = "Learn more here"></a>
 </p>
 
 Here's a tool I built with Anna Calle (Charles Darwin Foundation) to make ecological restoration through adaptive management more efficient and cost-effective. Users will encounter features to facilitate every step of the restoration process, from planting and monitoring, to evaluating the progress toward restoration targets.
