@@ -42,6 +42,8 @@ I developed a Bayesian framework for evaluating the cost-effectivness and future
 
 <p>
 <a href="https://linktr.ee/rforecology" target="_blank"><img src = "https://img.shields.io/badge/Linktree-View%20Resources-39df9a?logo=linktree" alt = "View Resource links"></a>
+
+<a href="https://www.rforecology.com" target="_blank"><img src = "https://img.shields.io/badge/View%20Website-R%20for%20Ecology-92a536?logo=r" alt = "View Website"></a>
 </p>
 
 <center><img src="/images/rforecology_thumb.png"></center>
