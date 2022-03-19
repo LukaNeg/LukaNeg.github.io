@@ -11,17 +11,9 @@
 <a href="https://github.com/LukaNeg/gv2050-platform-submission"><img src = "https://img.shields.io/badge/GitHub-View%20Repository-1c7ebf?logo=github" alt = "Learn more here"></a>
 </p>
 
-Here's a tool I built with Anna Calle (Charles Darwin Foundation) to make ecological restoration through adaptive management more efficient and cost-effective. Users will encounter features to facilitate every step of the restoration process, from planting and monitoring, to evaluating the progress toward restoration targets. Click here to check out the app 
-
-
-
-
+Here's a tool I built with Anna Calle (Charles Darwin Foundation) to make ecological restoration through adaptive management more efficient and cost-effective. Users will encounter features to facilitate every step of the restoration process, from planting and monitoring, to evaluating the progress toward restoration targets.
 
 ---
-
-
----
-
 ## How to compare two ecosystems
 
 <p>
@@ -30,16 +22,6 @@ Here's a tool I built with Anna Calle (Charles Darwin Foundation) to make ecolog
 
 <center><img src="/images/Duck_islands_thumb.png"></center>
 By comparing the biodiversity and composition of two ecosystems we can better understand the factors that differentiate these ecosystems in the first place. In this publication, I compared the plants and soils of two islands in the Gulf of Maine using simple visualizations, tables, and multivariate ordination.
-
----
-## Can plant movement drive ecosystem function?
-
-<p>
-<a href="https://www.lukanegoita.com/uploads/1/3/5/3/13537361/negoita_et_al-2016-ecography.pdf" target="_blank"><img src = "https://img.shields.io/badge/Publication-Download%20PDF-00a398?logo=adobeacrobatreader" alt = "Download Publication here"></a>
-</p>
-
-<center><img src="/images/islands_iso_thumb.png"></center>
-Here I used Bayesian regression, ordination, and model selection to see if island isolation can affect what types of plants make it to isolated Maine coast islands. This was the first empirical study to show that plant movement (or the lack there of) can influence patterns of plant traits on islands.
 
 ---
 ## Are personality archetypes real?
@@ -52,10 +34,25 @@ Here I used Bayesian regression, ordination, and model selection to see if islan
 In 2013, students of a statistics class at FSEV UK, Slovakia were asked to invite their friends to participate in a survey consisting of questions related to everything from fears, to hobbies, spending habits, and personality traits. I built a proof-of-concept Shiny App where you can see for yourself how a simple k-means cluster analysis can yield some interesting results with applications towards market segmentation.
 
 ---
+
+## Can plant movement drive ecosystem function?
+
+<p>
+<a href="https://www.lukanegoita.com/uploads/1/3/5/3/13537361/negoita_et_al-2016-ecography.pdf" target="_blank"><img src = "https://img.shields.io/badge/Publication-Download%20PDF-00a398?logo=adobeacrobatreader" alt = "Download Publication here"></a>
+</p>
+
+<center><img src="/images/islands_iso_thumb.png"></center>
+Here I used Bayesian regression, ordination, and model selection to see if island isolation can affect what types of plants make it to isolated Maine coast islands. This was the first empirical study to show that plant movement (or the lack there of) can influence patterns of plant traits on islands.
+
+---
 ## Can you use genetic algorithms to beat the stock market?
 
 <center><img src="/images/stock_thumb.png"></center>
 I used a combination of cross-correlation, linear and logistic regression, and Bayesian approaches, along with a genetic algorithm for attempting to optimize a successful stock prediction algorithm.
+
+---
+
+
 ---
 
 
