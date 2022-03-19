@@ -4,9 +4,11 @@
 ## RestoR: an app for managing biodiversity restoration
 
 <p>
-<a href="https://gv2050.shinyapps.io/gv2050-platform-submission/" target="_blank"><img src = "https://img.shields.io/badge/Shiny-Open%20Web%20App-1e64b6?logo=r" alt = "Visit the shiny app here"></a>
+<a href="https://gv2050.shinyapps.io/gv2050-platform-submission/" target="_blank"><img src = "https://img.shields.io/badge/Shiny-Open%20Web%20App-445017?logo=r" alt = "Visit the shiny app here"></a>
 
 <a href="https://community.rstudio.com/t/restor-shiny-contest-submission/104903"><img src = "https://img.shields.io/badge/RStudio-Open%20Blog%20Post-74aadb?logo=rstudio" alt = "Learn more here"></a>
+
+<a href="https://github.com/LukaNeg/gv2050-platform-submission"><img src = "https://img.shields.io/badge/GitHub-View%20Repository-1c7ebf?logo=github" alt = "Learn more here"></a>
 </p>
 
 Here's a tool I built with Anna Calle (Charles Darwin Foundation) to make ecological restoration through adaptive management more efficient and cost-effective. Users will encounter features to facilitate every step of the restoration process, from planting and monitoring, to evaluating the progress toward restoration targets. Click here to check out the app 
