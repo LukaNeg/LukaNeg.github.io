@@ -1,11 +1,10 @@
 # Data Science Portfolio
 ---
 
-## Comparing two ecosystems
+## How to compare two ecosystems
 
 <center><img src="/images/Duck_islands_thumb.png"></center>
-By comparing the biodiversity and composition of two ecosystems we can better understand the factors that differentiate these ecosystems in the first place. In this publication, I compared the plants and soils of two islands in the Gulf of Maine using simple visualizations, tables, and multivariate ordination. <br>
-
+By comparing the biodiversity and composition of two ecosystems we can better understand the factors that differentiate these ecosystems in the first place. In this publication, I compared the plants and soils of two islands in the Gulf of Maine using simple visualizations, tables, and multivariate ordination.
 <a href="https://www.lukanegoita.com/uploads/1/3/5/3/13537361/negoita_et_al_2016b.pdf">[The full publication PDF is available here]</a>
 
 ---
@@ -13,10 +12,14 @@ By comparing the biodiversity and composition of two ecosystems we can better un
 
 <center><img src="/images/Islands_Regression_thumb.png"></center>
 Here I used Bayesian regression, ordination, and model selection to see if island isolation can affect what types of plants make it to isolated Maine coast islands. This was the first empirical study to show that plant movement (or the lack there of) can influence patterns of plant traits on islands.
-
 <a href="https://www.lukanegoita.com/uploads/1/3/5/3/13537361/negoita_et_al-2016-ecography.pdf">[The full publication PDF is available here]</a>
 
 ---
+## Are personality archetypes real?
+
+<center><img src="/images/archetypes_thumb.png"></center>
+In 2013, students of a statistics class at FSEV UK, Slovakia were asked to invite their friends to participate in a survey consisting of questions related to everything from fears, to hobbies, spending habits, and personality traits. I built a proof-of-concept Shiny App where you can see for yourself how a simple k-means cluster analysis can yield some interesting results with applications towards market segmentation.
+<a href="https://lukanegoita.shinyapps.io/young_archetypes_of_slovakia/">[Click here to try the simple interactive app.]</a>
 
 
 ---
