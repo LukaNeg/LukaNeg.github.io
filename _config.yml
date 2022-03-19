@@ -4,7 +4,7 @@ logo: "/images/profile.jpg?raw=true"
 
 description:
   <p align="center">
-  <a href="pdf/Negoita_resume_08_07_20.pdf">Resume</a>  <i class="fa fa-camera-retro"></i> |
+  <a href="pdf/Negoita_resume_08_07_20.pdf">Resume</a> |
   <a href="https://www.linkedin.com/in/negoita/">LinkedIn</a> |
   <a href="https://github.com/lukaneg">GitHub</a>
   </p>
@@ -12,8 +12,14 @@ description:
   <p align="justify">
   Hi, I'm Luka and I'm a Data Scientist and Ecologist. My portfolio includes some of the projects I've recently worked on, with a strong emphasis on business impact and biodiversity conservation.
   </p>
+  
+    <p align="center">
+    <i></i>
+    I also have an online school on <a href="https://www.rforecology.com">R for Ecology</a> :)
+    </p>
+  
   <p align="center">
-  I believe the fundamental beauty of the world lies in the stories behind the patterns we see.
+  <i>I believe the fundamental beauty of the world lies in the stories behind the patterns we see.</i>
   </p>
   
 theme: jekyll-theme-minimal
