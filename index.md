@@ -8,6 +8,7 @@
 </p>
 
 I was able to predict the arrival of COVID-19 to the local community of the Galapagos Islands, Ecuador. I used tourist visitation data to estimate various scenarios on the probability that the virus would reach the islands. My results concluded that a complete stop of incoming tourist flights would be the only way to delay arrival and reduce the curve. A complete lock-down of tourist travel to the islands was implemented within weeks of sharing my results—a decision that likely saved lives.
+
 ---
 
 ## RestoR: an app for managing biodiversity restoration
