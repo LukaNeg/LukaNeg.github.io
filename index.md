@@ -38,6 +38,16 @@ Here's a tool I built with [Anna Calle](https://github.com/annagaby) (Charles Da
 I developed a Bayesian framework for evaluating the cost-effectivness and future total costs of different types of plant restoration methods in the Galapagos Islands, Ecuador. These results were immediately welcomed by the Charles Darwin Foundation and Galapagos National Park Directorate for optimizing future ecosystem restoration projects in the islands.
 
 ---
+## Written multiple blog posts, tutorials, videos, and online courses about learning R
+
+<p>
+<a href="https://linktr.ee/rforecology" target="_blank"><img src = "https://img.shields.io/badge/Linktree-View%20Resources-6235b8?logo=linktree" alt = "View Resource links"></a>
+</p>
+
+<center><img src="/images/rforecology_thumb.png"></center>
+I started the 'R for Ecology' online school in 2020 where I've since worked with hundreds of students on how to use R for science research. In that process I also started a blog, YouTube channel, and Twitter profile where I share free tutorials and resources.
+
+---
 ## Are personality archetypes real?
 
 <p>
@@ -77,16 +87,6 @@ Here I used Bayesian regression, ordination, and model selection to see if islan
 
 <center><img src="/images/Duck_islands_thumb.png"></center>
 By comparing the biodiversity and composition of two ecosystems we can better understand the factors that differentiate these ecosystems in the first place. In this publication, I compared the plants and soils of two islands in the Gulf of Maine using simple visualizations, tables, and multivariate ordination.
-
----
-## Written multiple blog posts, tutorials, videos, and online courses about learning R
-
-<p>
-<a href="https://linktr.ee/rforecology" target="_blank"><img src = "https://img.shields.io/badge/Linktree-View%20Resources-6235b8?logo=linktree" alt = "View Resource links"></a>
-</p>
-
-<center><img src="/images/rforecology_thumb.png"></center>
-I started the 'R for Ecology' online school in 2020 where I've since worked with hundreds of students on how to use R for science research. In that process I also started a blog, YouTube channel, and Twitter profile where I share free tutorials and resources.
 
 ---
 ## Can you use genetic algorithms to beat the stock market?
