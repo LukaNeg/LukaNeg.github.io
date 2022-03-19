@@ -1,7 +1,7 @@
 # Data Science Portfolio
 ---
 
-### Comparing two ecosystems
+## Comparing two ecosystems
 
 <center><img src="/images/Duck islands thumb.png"></center>
 
