@@ -5,6 +5,8 @@
 
 <p>
 <a href="/projects/coronavirus_analysis_v4.html" target="_blank"><img src = "https://img.shields.io/badge/RMarkdown-Open%20Report-e34d3f?logo=r" alt = "Learn more here"></a>
+
+<a href="https://github.com/LukaNeg/coronavirus_analysis"><img src = "https://img.shields.io/badge/GitHub-View%20Repository-1077b8?logo=github" alt = "Learn more here"></a>
 </p>
 
 <center><img src="/images/coronavirus_thumb.png"></center>
