@@ -34,6 +34,7 @@ Here's a tool I built with [Anna Calle](https://github.com/annagaby) (Charles Da
 <a href="pdf/cost-effectiveness_restoration_2021.pdf" target="_blank"><img src = "https://img.shields.io/badge/Publication-Download%20PDF-00a398?logo=adobeacrobatreader" alt = "Download Publication here"></a>
 </p>
 
+<center><img src="/images/restor_costs_thumb.png"></center>
 I developed a Bayesian framework for evaluating the cost-effectivness and future total costs of different types of plant restoration methods in the Galapagos Islands, Ecuador. These results were immediately welcomed by the Charles Darwin Foundation and Galapagos National Park Directorate for optimizing future ecosystem restoration projects in the islands.
 
 ---
