@@ -19,21 +19,21 @@ projects/RestoR.md
 <center><img src="/images/Duck_islands_thumb.png"></center>
 By comparing the biodiversity and composition of two ecosystems we can better understand the factors that differentiate these ecosystems in the first place. In this publication, I compared the plants and soils of two islands in the Gulf of Maine using simple visualizations, tables, and multivariate ordination.
 
-<a href="https://www.lukanegoita.com/uploads/1/3/5/3/13537361/negoita_et_al_2016b.pdf"><img src = "https://img.shields.io/badge/Publication-Download%20PDF-00a398?logo=adobeacrobatreader" alt = "Download Publication here"></a>
+<a href="https://www.lukanegoita.com/uploads/1/3/5/3/13537361/negoita_et_al_2016b.pdf" target="_blank"><img src = "https://img.shields.io/badge/Publication-Download%20PDF-00a398?logo=adobeacrobatreader" alt = "Download Publication here"></a>
 
 ---
 ## Can plant movement drive ecosystem function?
 
 <center><img src="/images/Islands_Regression_thumb.png"></center>
 Here I used Bayesian regression, ordination, and model selection to see if island isolation can affect what types of plants make it to isolated Maine coast islands. This was the first empirical study to show that plant movement (or the lack there of) can influence patterns of plant traits on islands.
-<a href="https://www.lukanegoita.com/uploads/1/3/5/3/13537361/negoita_et_al-2016-ecography.pdf">[The full publication PDF is available here]</a>
+<a href="https://www.lukanegoita.com/uploads/1/3/5/3/13537361/negoita_et_al-2016-ecography.pdf" target="_blank"><img src = "https://img.shields.io/badge/Publication-Download%20PDF-00a398?logo=adobeacrobatreader" alt = "Download Publication here"></a>
 
 ---
 ## Are personality archetypes real?
 
 <center><img src="/images/archetypes_thumb.png"></center>
 In 2013, students of a statistics class at FSEV UK, Slovakia were asked to invite their friends to participate in a survey consisting of questions related to everything from fears, to hobbies, spending habits, and personality traits. I built a proof-of-concept Shiny App where you can see for yourself how a simple k-means cluster analysis can yield some interesting results with applications towards market segmentation.
-<a href="https://lukanegoita.shinyapps.io/young_archetypes_of_slovakia/">[Click here to try the simple interactive app.]</a>
+<a href="https://lukanegoita.shinyapps.io/young_archetypes_of_slovakia/" target="_blank"><img src = "https://img.shields.io/badge/Shiny%20App-Open%20Web%20App-00a398?logo=r" alt = "Visit the shiny app here"></a>
 
 
 ---
