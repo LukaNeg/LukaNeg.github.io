@@ -81,6 +81,10 @@ By comparing the biodiversity and composition of two ecosystems we can better un
 ---
 ## Written multiple blog posts, tutorials, videos, and online courses about learning R
 
+<p>
+<a href="https://linktr.ee/rforecology" target="_blank"><img src = "https://img.shields.io/badge/Linktree-View%20Resources-6235b8?logo=linktree" alt = "View Resource links"></a>
+</p>
+
 <center><img src="/images/rforecology_thumb.png"></center>
 I started the 'R for Ecology' online school in 2020 where I've since worked with hundreds of students on how to use R for science research. In that process I also started a blog, YouTube channel, and Twitter profile where I share free tutorials and resources.
 
