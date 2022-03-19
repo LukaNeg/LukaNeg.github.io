@@ -4,9 +4,9 @@
 ## Predicting the arrival of COVID-19 to the Galapagos Islands
 
 <p>
-<a href="/projects/coronavirus_analysis_v4.html" target="_blank"><img src = "https://img.shields.io/badge/RMarkdown-Open%20Report-e34d3f?logo=r" alt = "Learn more here"></a>
+<a href="/projects/coronavirus_analysis_v4.html" target="_blank"><img src = "https://img.shields.io/badge/RMarkdown-Open%20Report-e34d3f?logo=r" alt = "Open R Markdown report"></a>
 
-<a href="https://github.com/LukaNeg/coronavirus_analysis"><img src = "https://img.shields.io/badge/GitHub-View%20Repository-1077b8?logo=github" alt = "Learn more here"></a>
+<a href="https://github.com/LukaNeg/coronavirus_analysis" target="_blank"><img src = "https://img.shields.io/badge/GitHub-View%20Repository-1077b8?logo=github" alt = "View Github Repository"></a>
 </p>
 
 <center><img src="/images/coronavirus_thumb.png"></center>
@@ -19,9 +19,9 @@ I was able to predict the arrival of COVID-19 to the local community of the Gala
 <p>
 <a href="https://gv2050.shinyapps.io/gv2050-platform-submission/" target="_blank"><img src = "https://img.shields.io/badge/Shiny-Open%20Web%20App-92a536?logo=r" alt = "Visit the shiny app here"></a>
 
-<a href="https://community.rstudio.com/t/restor-shiny-contest-submission/104903"><img src = "https://img.shields.io/badge/RStudio-Open%20Blog%20Post-74aadb?logo=rstudio" alt = "Learn more here"></a>
+<a href="https://community.rstudio.com/t/restor-shiny-contest-submission/104903" target="_blank"><img src = "https://img.shields.io/badge/RStudio-Open%20Blog%20Post-74aadb?logo=rstudio" alt = "Learn more here"></a>
 
-<a href="https://github.com/LukaNeg/gv2050-platform-submission"><img src = "https://img.shields.io/badge/GitHub-View%20Repository-1077b8?logo=github" alt = "Learn more here"></a>
+<a href="https://github.com/LukaNeg/gv2050-platform-submission" target="_blank"><img src = "https://img.shields.io/badge/GitHub-View%20Repository-1077b8?logo=github" alt = "View Github Repository"></a>
 </p>
 
 <center><img src="/images/restor_thumb.png"></center>
@@ -77,6 +77,11 @@ Here I used Bayesian regression, ordination, and model selection to see if islan
 
 <center><img src="/images/Duck_islands_thumb.png"></center>
 By comparing the biodiversity and composition of two ecosystems we can better understand the factors that differentiate these ecosystems in the first place. In this publication, I compared the plants and soils of two islands in the Gulf of Maine using simple visualizations, tables, and multivariate ordination.
+
+---
+## Written multiple blog posts, tutorials, videos, and online courses about learning R
+
+I started the 'R for Ecology' online school in 2020 where I've since worked with hundreds of students on how to use R for science research. In that process I also started a blog, YouTube channel, and Twitter profile where I share free tutorials and resources.
 
 ---
 ## Can you use genetic algorithms to beat the stock market?
