@@ -50,6 +50,11 @@ In 2013, students of a statistics class at FSEV UK, Slovakia were asked to invit
 ---
 ## Combining data and stories: an infographic about Galapagos
 
+<p>
+<a href="pdf/Final_English_GV2050_infographic.pdf" target="_blank"><img src = "https://img.shields.io/badge/Infographic-Download%20PDF-00a398?logo=adobeacrobatreader" alt = "Download Infographic here"></a>
+</p>
+
+<center><a href="pdf/Final_English_GV2050_infographic.pdf" target="_blank"><img src="/images/gv2050_infographic.png"></center></a>
 While working at the Charles Darwin Foundation, I was commissioned to create an infographic describing our work on ecosystem restoration in the Galapagos Islands. Here I combined simple data visualizations with custom graphics and text to tell our story.
 
 ---
