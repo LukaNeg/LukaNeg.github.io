@@ -7,6 +7,7 @@
 <a href="/projects/coronavirus_analysis_v4.html" target="_blank"><img src = "https://img.shields.io/badge/RMarkdown-Open%20Report-e34d3f?logo=r" alt = "Learn more here"></a>
 </p>
 
+<center><img src="/images/coronavirus_thumb.png"></center>
 I was able to predict the arrival of COVID-19 to the local community of the Galapagos Islands, Ecuador. I used tourist visitation and current coronavirus data to estimate various scenarios on the probability that the virus would reach the islands. My results concluded that a complete stop of incoming tourist flights would be the only way to delay arrival and reduce the curve. A complete lock-down of tourist travel to the islands was implemented within weeks of sharing my results—a decision that likely saved lives.
 
 ---
@@ -21,7 +22,13 @@ I was able to predict the arrival of COVID-19 to the local community of the Gala
 <a href="https://github.com/LukaNeg/gv2050-platform-submission"><img src = "https://img.shields.io/badge/GitHub-View%20Repository-1077b8?logo=github" alt = "Learn more here"></a>
 </p>
 
-Here's a tool I built with Anna Calle (Charles Darwin Foundation) to make ecological restoration through adaptive management more efficient and cost-effective. Users will encounter features to facilitate every step of the restoration process, from planting and monitoring, to evaluating the progress toward restoration targets.
+<center><img src="/images/restor_thumb.png"></center>
+Here's a tool I built with [Anna Calle](https://github.com/annagaby) (Charles Darwin Foundation) to make ecological restoration through adaptive management more efficient and cost-effective. Users will encounter features to facilitate every step of the restoration process, from planting and monitoring, to evaluating the progress toward restoration targets.
+
+---
+## Optimizing the cost-effectiveness of plant restoration
+
+Here I developed a Bayesian framework for evaluating the cost-effectivness and future total costs of different types of plant restoration methods in the Galapagos Islands, Ecuador. These results were immediately welcomed by the Charles Darwin Foundation and Galapagos National Park Directorate for optimizing future ecosystem restoration projects in the islands.
 
 ---
 ## How to compare two ecosystems
