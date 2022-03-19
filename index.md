@@ -48,7 +48,7 @@ I developed a Bayesian framework for evaluating the cost-effectivness and future
 In 2013, students of a statistics class at FSEV UK, Slovakia were asked to invite their friends to participate in a survey consisting of questions related to everything from fears, to hobbies, spending habits, and personality traits. I built a proof-of-concept Shiny App where you can see for yourself how a simple k-means cluster analysis can yield some interesting results with applications towards market segmentation.
 
 ---
-## Combining data and stories: an infographic about Galapagos
+## Combining data and stories: an infographic about ecosystem restoration in the Galapagos
 
 <p>
 <a href="pdf/Final_English_GV2050_infographic.pdf" target="_blank"><img src = "https://img.shields.io/badge/Infographic-Download%20PDF-00a398?logo=adobeacrobatreader" alt = "Download Infographic here"></a>
