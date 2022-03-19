@@ -4,9 +4,9 @@
 ## RestoR: an app for managing biodiversity restoration
 
 <p>
-<a href="https://gv2050.shinyapps.io/gv2050-platform-submission/" target="_blank"><img src = "https://img.shields.io/badge/Shiny%20App-Open%20Web%20App-00a398?logo=r" alt = "Visit the shiny app here"></a>
+<a href="https://gv2050.shinyapps.io/gv2050-platform-submission/" target="_blank"><img src = "https://img.shields.io/badge/Shiny-Open%20Web%20App-1e64b6?logo=r" alt = "Visit the shiny app here"></a>
 
-<a href="https://community.rstudio.com/t/restor-shiny-contest-submission/104903"><img src = "https://img.shields.io/badge/RStudio-Open%20Blog%20Post-00a398?logo=rstudio" alt = "Learn more here"></a>
+<a href="https://community.rstudio.com/t/restor-shiny-contest-submission/104903"><img src = "https://img.shields.io/badge/RStudio-Open%20Blog%20Post-74aadb?logo=rstudio" alt = "Learn more here"></a>
 </p>
 
 Here's a tool I built with Anna Calle (Charles Darwin Foundation) to make ecological restoration through adaptive management more efficient and cost-effective. Users will encounter features to facilitate every step of the restoration process, from planting and monitoring, to evaluating the progress toward restoration targets. Click here to check out the app 
@@ -36,14 +36,14 @@ By comparing the biodiversity and composition of two ecosystems we can better un
 <a href="https://www.lukanegoita.com/uploads/1/3/5/3/13537361/negoita_et_al-2016-ecography.pdf" target="_blank"><img src = "https://img.shields.io/badge/Publication-Download%20PDF-00a398?logo=adobeacrobatreader" alt = "Download Publication here"></a>
 </p>
 
-<center><img src="/images/Islands_Regression_thumb.png"></center>
+<center><img src="/images/islands_iso_thumb.png"></center>
 Here I used Bayesian regression, ordination, and model selection to see if island isolation can affect what types of plants make it to isolated Maine coast islands. This was the first empirical study to show that plant movement (or the lack there of) can influence patterns of plant traits on islands.
 
 ---
 ## Are personality archetypes real?
 
 <p>
-<a href="https://lukanegoita.shinyapps.io/young_archetypes_of_slovakia/" target="_blank"><img src = "https://img.shields.io/badge/Shiny%20App-Open%20Web%20App-00a398?logo=r" alt = "Visit the shiny app here"></a>
+<a href="https://lukanegoita.shinyapps.io/young_archetypes_of_slovakia/" target="_blank"><img src = "https://img.shields.io/badge/Shiny-Open%20Web%20App-1e64b6?logo=r" alt = "Visit the shiny app here"></a>
 </p>
 
 <center><img src="/images/archetypes_thumb.png"></center>
@@ -52,7 +52,7 @@ In 2013, students of a statistics class at FSEV UK, Slovakia were asked to invit
 ---
 ## Can you use genetic algorithms to beat the stock market?
 
-<center><img src="/images/stock_thumb.jpg"></center>
+<center><img src="/images/stock_thumb.png"></center>
 I used a combination of cross-correlation, linear and logistic regression, and Bayesian approaches, along with a genetic algorithm for attempting to optimize a successful stock prediction algorithm.
 ---
 
