@@ -10,7 +10,7 @@
 </p>
 
 <center><img src="/images/coronavirus_thumb.png"></center>
-I was able to predict the arrival of COVID-19 to the local community of the Galapagos Islands, Ecuador. I used tourist visitation and current coronavirus data to estimate various scenarios on the probability that the virus would reach the islands. My results concluded that a complete stop of incoming tourist flights would be the only way to delay arrival and reduce the curve. A complete lock-down of tourist travel to the islands was implemented within weeks of sharing my results—a decision that likely saved lives.
+I was able to predict the arrival of COVID-19 to the local community of the Galapagos Islands, Ecuador. I used tourist visitation and current coronavirus data to estimate various scenarios on the probability that the virus would reach the islands. My results concluded that a complete stop of incoming tourist flights would be the only way to delay arrival and reduce the curve. A complete lock-down of tourist travel to the islands was implemented within weeks of sharing my results with local healthcare and government officials—a decision that likely saved lives.
 
 ---
 
@@ -30,7 +30,11 @@ Here's a tool I built with [Anna Calle](https://github.com/annagaby) (Charles Da
 ---
 ## Optimizing the cost-effectiveness of plant restoration
 
-Here I developed a Bayesian framework for evaluating the cost-effectivness and future total costs of different types of plant restoration methods in the Galapagos Islands, Ecuador. These results were immediately welcomed by the Charles Darwin Foundation and Galapagos National Park Directorate for optimizing future ecosystem restoration projects in the islands.
+<p>
+<a href="pdf/cost-effectiveness_restoration_2021.pdf" target="_blank"><img src = "https://img.shields.io/badge/Publication-Download%20PDF-00a398?logo=adobeacrobatreader" alt = "Download Publication here"></a>
+</p>
+
+I developed a Bayesian framework for evaluating the cost-effectivness and future total costs of different types of plant restoration methods in the Galapagos Islands, Ecuador. These results were immediately welcomed by the Charles Darwin Foundation and Galapagos National Park Directorate for optimizing future ecosystem restoration projects in the islands.
 
 ---
 ## How to compare two ecosystems
@@ -68,14 +72,6 @@ Here I used Bayesian regression, ordination, and model selection to see if islan
 
 <center><img src="/images/stock_thumb.png"></center>
 I used a combination of cross-correlation, linear and logistic regression, and Bayesian approaches, along with a genetic algorithm for attempting to optimize a successful stock prediction algorithm.
-
----
-
-
----
-
-
----
 
 
 ---
