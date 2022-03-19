@@ -48,6 +48,11 @@ I developed a Bayesian framework for evaluating the cost-effectivness and future
 In 2013, students of a statistics class at FSEV UK, Slovakia were asked to invite their friends to participate in a survey consisting of questions related to everything from fears, to hobbies, spending habits, and personality traits. I built a proof-of-concept Shiny App where you can see for yourself how a simple k-means cluster analysis can yield some interesting results with applications towards market segmentation.
 
 ---
+## Combining data and stories: an infographic about Galapagos
+
+While working at the Charles Darwin Foundation, I was commissioned to create an infographic describing our work on ecosystem restoration in the Galapagos Islands. Here I combined simple data visualizations with custom graphics and text to tell our story.
+
+---
 
 ## Can plant movement drive ecosystem function?
 
