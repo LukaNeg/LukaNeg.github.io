@@ -1,11 +1,25 @@
 # Data Science Portfolio
 ---
 
+## RestoR: an app for managing biodiversity restoration
+
+Here's a tool I built with Anna Calle (Charles Darwin Foundation) to make ecological restoration through adaptive management more efficient and cost-effective. Users will encounter features to facilitate every step of the restoration process, from planting and monitoring, to evaluating the progress toward restoration targets. Click here to check out the app 
+
+https://gv2050.shinyapps.io/gv2050-platform-submission/
+
+projects/RestoR.md
+
+---
+
+
+---
+
 ## How to compare two ecosystems
 
 <center><img src="/images/Duck_islands_thumb.png"></center>
 By comparing the biodiversity and composition of two ecosystems we can better understand the factors that differentiate these ecosystems in the first place. In this publication, I compared the plants and soils of two islands in the Gulf of Maine using simple visualizations, tables, and multivariate ordination.
-<a href="https://www.lukanegoita.com/uploads/1/3/5/3/13537361/negoita_et_al_2016b.pdf">[The full publication PDF is available here]</a>
+
+<a href="https://www.lukanegoita.com/uploads/1/3/5/3/13537361/negoita_et_al_2016b.pdf"><img src = "https://img.shields.io/badge/Publication-Download%20PDF-00a398?logo=adobeacrobatreader" alt = "Download Publication here"></a>
 
 ---
 ## Can plant movement drive ecosystem function?
@@ -23,8 +37,10 @@ In 2013, students of a statistics class at FSEV UK, Slovakia were asked to invit
 
 
 ---
+## Can you use genetic algorithms to beat the stock market?
 
-
+<center><img src="/images/stock_thumb.jpg"></center>
+I used a combination of cross-correlation, linear and logistic regression, and Bayesian approaches, along with a genetic algorithm for attempting to optimize a successful stock prediction algorithm.
 ---
 
 
