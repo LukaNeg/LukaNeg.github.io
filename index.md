@@ -71,6 +71,16 @@ In 2013, students of a statistics class at FSEV UK, Slovakia were asked to invit
 While working at the Charles Darwin Foundation, I was commissioned to create an infographic describing our work on ecosystem restoration in the Galapagos Islands. Here I combined simple data visualizations with custom graphics and text to tell our story.
 
 ---
+## Visualizing my Amazon book purchase history
+
+<p>
+<a href="/R-projects/personal-scrape.html" target="_blank"><img src = "https://img.shields.io/badge/RMarkdown-Open%20Report-e34d3f?logo=r" alt = "Open R Markdown report"></a>
+</p>
+
+<center><img src="/images/amazon-books-plot-1.png"></center>
+I love books, and I know I've purchased way too many books from Amazon, so I figured that it might be interesting to visualize that purchase history. :)
+
+---
 ## Can plant movement drive ecosystem function?
 
 <p>
@@ -95,12 +105,6 @@ By comparing the biodiversity and composition of two ecosystems we can better un
 
 <center><img src="/images/stock_thumb.png"></center>
 I used a combination of cross-correlation, linear and logistic regression, and Bayesian approaches, along with a genetic algorithm for attempting to optimize a successful stock prediction algorithm.
-
-
-<a href="/R-projects/personal-scrape.html" target="_blank">test</a>
-
-<a href="/projects/coronavirus_analysis_v4.html" target="_blank">test2</a>
-
 
 ---
 
