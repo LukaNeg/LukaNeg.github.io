@@ -97,7 +97,10 @@ By comparing the biodiversity and composition of two ecosystems we can better un
 I used a combination of cross-correlation, linear and logistic regression, and Bayesian approaches, along with a genetic algorithm for attempting to optimize a successful stock prediction algorithm.
 
 
-<a href="/R-projects/personal-scrape.html" target="_blank">test2</a>
+<a href="/R-projects/personal-scrape.html" target="_blank">test</a>
+
+<a href="/projects/coronavirus_analysis_v4.html" target="_blank">test2</a>
+
 
 ---
 
