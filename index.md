@@ -1,5 +1,6 @@
 # Data Science Portfolio
 
+<!-- https://chriskhanhtran.github.io/_posts/2020-01-13-portfolio-tutorial/ -->
 ---
 ## Predicting the arrival of COVID-19 to the Galapagos Islands
 
