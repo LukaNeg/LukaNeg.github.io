@@ -99,6 +99,8 @@ I used a combination of cross-correlation, linear and logistic regression, and B
 
 [test](/projects/personal-scrape.html)
 
+<a href="/projects/personal-scrape.html" target="_blank">test2</a>
+
 ---
 
 <center>© Luka Negoita 2022 . Powered by Jekyll and the Minimal Theme.</center>
