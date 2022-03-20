@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Scraping data about myself</title>
+
+<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+<style type="text/css">
+  code {
+    white-space: pre;
+  }
+  .sourceCode {
+    overflow: visible;
+  }
+</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+
+</style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    for (var j = 0; j < rules.length; j++) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' && rule.style.backgroundColor === '') continue;
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
+
+
+
+
+<link rel="stylesheet" href="bootstrap.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Luka Negoita, PhD</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-leaf"></span>
+     
+    Me
+  </a>
+</li>
+<li>
+  <a href="portfolio.html">
+    <span class="fa fa-code"></span>
+     
+    Portfolio
+  </a>
+</li>
+<li>
+  <a href="resume.html">
+    <span class="fa fa-file"></span>
+     
+    Resume
+  </a>
+</li>
+<li>
+  <a href="resources.html">
+    <span class="fa fa-coffee"></span>
+     
+    
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="mailto:lukanegoita@gmail.com">
+    <span class="fa fa-envelope-o"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://www.linkedin.com/in/negoita/">
+    <span class="fa fa-linkedin"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://github.com/LukaNeg">
+    <span class="fa fa-github"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Scraping data about myself</h1>
+<h3 class="subtitle">What data can I gather and analyze to learn more about myself?</h3>
+<h4 class="author"></h4>
+<h4 class="date">Last Update: 20 March, 2022</h4>
+
+</div>
+
+
+<!-- Great reference for reproducible research: -->
+<!-- https://nceas.github.io/sasap-training/materials/reproducible_research_in_r_fairbanks/ -->
+<style type="text/css">
+# this adjusts the current page
+body .main-container {
+  max-width: 1000px !important;
+  width: 1000px !important;
+}
+body {
+  width: auto;
+  max-width: 1000px !important;
+}
+.toc-content {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+</style>
+<p><br></p>
+<div id="background" class="section level1">
+<h1>Background</h1>
+<p>I want to learn a bit more about myself so I realized, why not “scrape” my own personal data and see what I can learn or at least visualize. My first foray will be into studying my Amazon web purchases. For better or for worse, Amazon has made it incredibly easy to purchase anything I need. But it all began with books. So lets take a look at the data I can “scrape” on my book purchase history. I say “scrape,” but it’s all readily available to download from my Amazon user account. I just went to my Amazon Account page, clicked on “Download order reports,” and selected a date range that included my entire Amazon history.</p>
+<p><img src="images/amazon_screen.png" alt="amazon order history" style="width:100%" class="center image-border"></p>
+<p><br> First, I just need to upload some important packages and functions I use later</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse) <span class="co"># Best library for data wrangling</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Custom function for plotting transparent colors:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>t_col <span class="ot">&lt;-</span> <span class="cf">function</span>(color, <span class="at">percent =</span> <span class="dv">50</span>) {</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  rgb.val <span class="ot">&lt;-</span> <span class="fu">col2rgb</span>(color)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  t.col <span class="ot">&lt;-</span> <span class="fu">rgb</span>(rgb.val[<span class="dv">1</span>], rgb.val[<span class="dv">2</span>], rgb.val[<span class="dv">3</span>], <span class="at">max =</span> <span class="dv">255</span>, <span class="at">alpha =</span> (<span class="dv">100</span><span class="sc">-</span>percent)<span class="sc">*</span><span class="dv">255</span><span class="sc">/</span><span class="dv">100</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">invisible</span>(t.col)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p><br></p>
+</div>
+<div id="load-and-clean-data" class="section level1">
+<h1>Load and Clean Data</h1>
+<p>Then I uploade these data to R:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>amazon_raw <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;private_data/my_amazon_history.csv&quot;</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>amazon_raw</span></code></pre></div>
+<pre><code>## # A tibble: 622 × 36
+##    `Order Date` `Order ID`  Title     Category `ASIN/ISBN` `UNSPSC Code` Website
+##    &lt;chr&gt;        &lt;chr&gt;       &lt;chr&gt;     &lt;chr&gt;    &lt;chr&gt;               &lt;dbl&gt; &lt;chr&gt;  
+##  1 7/7/08       058-082184… Log from… Paperba… 014004261X       55101500 Amazon…
+##  2 9/11/08      103-852564… Foundati… Paperba… 226705943        55101500 Amazon…
+##  3 10/1/08      102-661352… Garmin e… Wireles… B000PDR230       49000000 Amazon…
+##  4 2/20/09      103-274886… Tombow M… Home     B00135DJQ8       60121500 Amazon…
+##  5 2/20/09      103-274886… Rembrand… Paperba… 486241602        55101500 Amazon…
+##  6 4/7/09       103-018926… Niji Wat… Kitchen  B000KNNKKE       60120000 Amazon…
+##  7 4/7/09       103-810479… Earth&#39;s … Paperba… 716784904        55101500 Amazon…
+##  8 4/20/09      103-628195… Dinosaur… Paperba… 312104561        55101500 Amazon…
+##  9 5/6/09       103-282857… Shure M9… Electro… B00006I5SB       60131401 Amazon…
+## 10 5/6/09       103-952968… TCC TC-4… Electro… B000J46TFW       52161547 Amazon…
+## # … with 612 more rows, and 29 more variables: Release Date &lt;chr&gt;,
+## #   Condition &lt;chr&gt;, Seller &lt;chr&gt;, Seller Credentials &lt;chr&gt;,
+## #   List Price Per Unit &lt;chr&gt;, Purchase Price Per Unit &lt;chr&gt;, Quantity &lt;dbl&gt;,
+## #   Payment Instrument Type &lt;chr&gt;, Purchase Order Number &lt;lgl&gt;,
+## #   PO Line Number &lt;lgl&gt;, Ordering Customer Email &lt;chr&gt;, Shipment Date &lt;chr&gt;,
+## #   Shipping Address Name &lt;chr&gt;, Shipping Address Street 1 &lt;chr&gt;,
+## #   Shipping Address Street 2 &lt;chr&gt;, Shipping Address City &lt;chr&gt;, …</code></pre>
+<p>As you can see, there are a lot of data here and I definitely didn’t need all the columns. So let’s clean this up a bit.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># First select the columns I want to keep and rename them:</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>amazon_clean <span class="ot">&lt;-</span> <span class="fu">select</span>(amazon_raw, </span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>                       <span class="at">order_date=</span><span class="st">`</span><span class="at">Order Date</span><span class="st">`</span>,</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>                       <span class="at">category=</span>Category,</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>                       <span class="at">title=</span>Title,</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>                       <span class="at">cost=</span><span class="st">`</span><span class="at">Item Total</span><span class="st">`</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Then convert the cost with &#39;$&#39; sign into numeric,</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># convert the date into Date format, the category</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="co"># into a factor, sort everything by date, and finally</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="co"># calculate cumulative spending:</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">cost =</span> <span class="fu">as.numeric</span>(<span class="fu">gsub</span>(<span class="st">&quot;</span><span class="sc">\\</span><span class="st">$&quot;</span>,<span class="st">&quot;&quot;</span>,cost)),</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>         <span class="at">order_date =</span> <span class="fu">as.Date</span>(order_date, <span class="at">format=</span><span class="st">&quot;%m/%d/%y&quot;</span>),</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>         <span class="at">category=</span><span class="fu">as.factor</span>(category),</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>         <span class="at">cum_spending =</span> <span class="fu">cumsum</span>(cost))</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>amazon_clean</span></code></pre></div>
+<pre><code>## # A tibble: 622 × 5
+##    order_date category                 title                   cost cum_spending
+##    &lt;date&gt;     &lt;fct&gt;                    &lt;chr&gt;                  &lt;dbl&gt;        &lt;dbl&gt;
+##  1 2008-07-07 Paperback                Log from the &#39;Sea of…   1.95         1.95
+##  2 2008-09-11 Paperback                Foundations of Ecolo…  36           38.0 
+##  3 2008-10-01 Wireless Phone Accessory Garmin eTrex Venture… 117          155.  
+##  4 2009-02-20 Home                     Tombow MONO Professi…  11.0        166.  
+##  5 2009-02-20 Paperback                Rembrandt Landscape …   6.95       173.  
+##  6 2009-04-07 Kitchen                  Niji Waterbrush Small   5.25       178.  
+##  7 2009-04-07 Paperback                Earth&#39;s Climate: Pas…  68.6        247.  
+##  8 2009-04-20 Paperback                Dinosaurs in the Att…   4.99       252.  
+##  9 2009-05-06 Electronics              Shure M97xE High-Per…  69.1        321.  
+## 10 2009-05-06 Electronics              TCC TC-400G/L Phono …  29.5        350.  
+## # … with 612 more rows</code></pre>
+<p>Now that’s more like it. A nice clean dataframe to work with.</p>
+<p><br></p>
+</div>
+<div id="plot-results" class="section level1">
+<h1>Plot Results</h1>
+<p>Now for a quick plot to see some results:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot cumulative spending by order date:</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="at">data=</span>amazon_clean, cum_spending<span class="sc">~</span>order_date, <span class="at">type=</span><span class="st">&quot;l&quot;</span>) </span></code></pre></div>
+<p><img src="personal-scrape_files/figure-html/unnamed-chunk-5-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>Interesting… Not a final figure, but interesting to notice there were times when I was buying more and times when I wasn’t buying as much. But I want to look at books specifically. I know this doesn’t account for all book purchases, but after 2010 when I first started my Prime membership (yay for free 2-day shipping!), I’m sure almost all of my book purchases came from Amazon.</p>
+<p>For now, I just want to extract the history of how many books I purchased over time</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>amazon_books <span class="ot">&lt;-</span> <span class="fu">filter</span>(amazon_clean,</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>                       category <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;Paperback&quot;</span>,<span class="st">&quot;Staple Bound&quot;</span>,<span class="st">&quot;Pamphlet&quot;</span>,</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>                                       <span class="st">&quot;Hardcover&quot;</span>,<span class="st">&quot;Mass Market Paperback&quot;</span>,</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>                                       <span class="st">&quot;Perfect Paperback&quot;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># and add in a column for the cummulative total number of books purchased:</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">cum_spending =</span> <span class="fu">cumsum</span>(cost),</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>         <span class="at">cum_total =</span> <span class="fu">cumsum</span>(cost<span class="sc">&gt;=</span><span class="dv">0</span>))</span></code></pre></div>
+<p>Now, I’ll plot a nicer figure to show my book purchase history as well as adding in some markers on some significant moments in my life.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> amazon_books <span class="co"># just change the variable name to make it easier to write</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co"># prepare useful variables for plotting parameters:</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>years <span class="ot">&lt;-</span> <span class="fu">unique</span>(<span class="fu">year</span>(dat<span class="sc">$</span>order_date))</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>years <span class="ot">&lt;-</span> <span class="fu">c</span>(years,<span class="st">&quot;2020&quot;</span>)</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>jan1year <span class="ot">&lt;-</span> <span class="fu">as.Date</span>(<span class="fu">paste</span>(years,<span class="dv">01</span>,<span class="dv">01</span>,<span class="at">sep=</span><span class="st">&quot;-&quot;</span>))</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>total<span class="ot">=</span><span class="fu">nrow</span>(dat)</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mai=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="fl">1.2</span>,.<span class="dv">5</span>,.<span class="dv">5</span>)) <span class="co"># plotting parameters</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="at">data=</span>dat, cum_total<span class="sc">~</span>order_date, <span class="at">type=</span><span class="st">&quot;n&quot;</span>, <span class="at">axes=</span>F, <span class="at">ylab=</span><span class="st">&quot;&quot;</span>,<span class="at">xlab=</span><span class="st">&quot;&quot;</span>, <span class="at">xlim=</span><span class="fu">c</span>(<span class="fu">min</span>(jan1year),<span class="fu">as.Date</span>(<span class="st">&quot;2020-01-01&quot;</span>)),</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">ylim=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">240</span>))</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a><span class="co"># create the axes to my specifications:</span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a><span class="fu">axis</span>(<span class="dv">1</span>, <span class="at">at=</span>jan1year,<span class="at">labels=</span>years, <span class="at">las=</span><span class="dv">2</span>, <span class="at">cex=</span>.<span class="dv">5</span>, <span class="at">cex=</span>.<span class="dv">5</span>)</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a><span class="fu">axis</span>(<span class="dv">2</span>, <span class="at">at=</span><span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">200</span>,<span class="dv">50</span>),<span class="at">labels=</span><span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">200</span>,<span class="dv">50</span>), <span class="at">las=</span><span class="dv">2</span>)</span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a><span class="co"># add axis and main labels:</span></span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a><span class="fu">mtext</span>(<span class="st">&quot;Year&quot;</span>,<span class="at">side=</span><span class="dv">1</span>, <span class="at">line=</span><span class="fl">3.5</span>, <span class="at">cex=</span><span class="fl">1.2</span>)</span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a><span class="fu">mtext</span>(<span class="st">&quot;Books Purchased</span><span class="sc">\n</span><span class="st">(cumulative)&quot;</span>,<span class="at">side=</span><span class="dv">2</span>, <span class="at">line=</span><span class="dv">3</span>, <span class="at">cex=</span><span class="fl">1.2</span>)</span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a><span class="fu">mtext</span>(<span class="at">side=</span><span class="dv">3</span>, <span class="at">cex=</span><span class="fl">1.4</span>,<span class="st">&quot;Cumulative number of books purchased&quot;</span>, <span class="at">font=</span><span class="dv">2</span>, <span class="at">adj=</span><span class="dv">0</span>)</span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a><span class="co"># plot my cumulative total books as a filled shape:</span></span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a><span class="fu">polygon</span>(<span class="at">x=</span><span class="fu">c</span>(dat<span class="sc">$</span>order_date, <span class="fu">rev</span>(dat<span class="sc">$</span>order_date)), <span class="at">y=</span><span class="fu">c</span>(dat<span class="sc">$</span>cum_total,<span class="fu">rep</span>(<span class="dv">0</span>,total)),</span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>        <span class="at">border=</span>F, <span class="at">col=</span><span class="fu">t_col</span>(<span class="st">&quot;darkgreen&quot;</span>,<span class="dv">50</span>))</span></code></pre></div>
+<p><img src="personal-scrape_files/figure-html/unnamed-chunk-7-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>Great! Now just add in a few important moments in my life</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># gradauated undergrad</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">arrows</span>(<span class="at">x0=</span><span class="fu">as.Date</span>(<span class="st">&quot;2011-06-06&quot;</span>), <span class="at">x1=</span><span class="fu">as.Date</span>(<span class="st">&quot;2011-06-06&quot;</span>), <span class="at">y0=</span><span class="dv">0</span>, <span class="at">y1=</span><span class="dv">70</span>, <span class="at">length=</span>.<span class="dv">1</span>, <span class="at">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">text</span>(<span class="st">&quot;B.A. in Human Ecology&quot;</span>, <span class="at">x=</span><span class="fu">as.Date</span>(<span class="st">&quot;2011-06-06&quot;</span>), <span class="at">y=</span><span class="dv">80</span>, <span class="at">adj=</span>.<span class="dv">9</span>, <span class="at">cex=</span>.<span class="dv">7</span>)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="co"># started grad school</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="fu">arrows</span>(<span class="at">x0=</span><span class="fu">as.Date</span>(<span class="st">&quot;2012-08-16&quot;</span>), <span class="at">x1=</span><span class="fu">as.Date</span>(<span class="st">&quot;2012-08-16&quot;</span>), <span class="at">y0=</span><span class="dv">0</span>, <span class="at">y1=</span><span class="dv">105</span>, <span class="at">length=</span>.<span class="dv">1</span>, <span class="at">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="fu">text</span>(<span class="st">&quot;Started grad school&quot;</span>, <span class="at">x=</span><span class="fu">as.Date</span>(<span class="st">&quot;2012-08-16&quot;</span>), <span class="at">y=</span><span class="dv">115</span>, <span class="at">adj=</span>.<span class="dv">9</span>, <span class="at">cex=</span>.<span class="dv">7</span>)</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="co"># passed qualifying exam</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="fu">arrows</span>(<span class="at">x0=</span><span class="fu">as.Date</span>(<span class="st">&quot;2014-10-16&quot;</span>), <span class="at">x1=</span><span class="fu">as.Date</span>(<span class="st">&quot;2014-10-16&quot;</span>), <span class="at">y0=</span><span class="dv">0</span>, <span class="at">y1=</span><span class="dv">150</span>, <span class="at">length=</span>.<span class="dv">1</span>, <span class="at">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a><span class="fu">text</span>(<span class="st">&quot;Passed the qualifying exam&quot;</span>, <span class="at">x=</span><span class="fu">as.Date</span>(<span class="st">&quot;2014-10-16&quot;</span>), <span class="at">y=</span><span class="dv">160</span>, <span class="at">adj=</span>.<span class="dv">9</span>, <span class="at">cex=</span>.<span class="dv">7</span>)</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a><span class="co"># graduated grad school</span></span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a><span class="fu">arrows</span>(<span class="at">x0=</span><span class="fu">as.Date</span>(<span class="st">&quot;2018-05-13&quot;</span>), <span class="at">x1=</span><span class="fu">as.Date</span>(<span class="st">&quot;2018-05-13&quot;</span>), <span class="at">y0=</span><span class="dv">0</span>, <span class="at">y1=</span><span class="dv">200</span>, <span class="at">length=</span>.<span class="dv">1</span>, <span class="at">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a><span class="fu">text</span>(<span class="st">&quot;Ph.D. in Ecology&quot;</span>, <span class="at">x=</span><span class="fu">as.Date</span>(<span class="st">&quot;2018-05-13&quot;</span>), <span class="at">y=</span><span class="dv">210</span>, <span class="at">adj=</span>.<span class="dv">9</span>, <span class="at">cex=</span>.<span class="dv">7</span>)</span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a><span class="co"># moved to Galapagos</span></span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a><span class="fu">arrows</span>(<span class="at">x0=</span><span class="fu">as.Date</span>(<span class="st">&quot;2019-04-10&quot;</span>), <span class="at">x1=</span><span class="fu">as.Date</span>(<span class="st">&quot;2019-04-10&quot;</span>), <span class="at">y0=</span><span class="dv">0</span>, <span class="at">y1=</span><span class="dv">225</span>, <span class="at">length=</span>.<span class="dv">1</span>, <span class="at">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a><span class="fu">text</span>(<span class="st">&quot;Moved to Galápagos&quot;</span>, <span class="at">x=</span><span class="fu">as.Date</span>(<span class="st">&quot;2019-04-10&quot;</span>), <span class="at">y=</span><span class="dv">235</span>, <span class="at">adj=</span>.<span class="dv">9</span>, <span class="at">cex=</span>.<span class="dv">7</span>)</span></code></pre></div>
+<p><img src="personal-scrape_files/figure-html/amazon-books-plot-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>And voila!</p>
+<p><br></p>
+<!-- Removes white space at end of document: -->
+<div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;">
+
+</div>
+<!-- Ok, so from August 27, 2012 I was always on prime until this September? -->
+<!-- and before that, just Oct 3 2010 - Oct 3 2011? -->
+<!-- 
+I always said my computer is my life... so lets find out what it has to say about me.
+
+First, here is the code I used to scrape everything in my Documents directory and create a list of files with all of their info:
+
+
+```r
+setwd("~/Documents")
+all_dir <- list.dirs()
+file_data <- NULL
+for(d in all_dir){
+  files <- list.files(path=d)
+  for(f in files){
+    file_data <- rbind(file_data,as.data.frame(file.info(paste(d,f, sep="/"))))
+  }
+}
+```
+
+<br>
+But this took a long time to run, so here are the data uploaded now
+
+
+```r
+file_data <- read_csv("private_data/scraped_files_info.csv")
+```
+
+# Session info
+***
+
+
+```r
+sessionInfo()
+```
+
+```
+## R version 4.1.2 (2021-11-01)
+## Platform: x86_64-apple-darwin17.0 (64-bit)
+## Running under: macOS Big Sur 10.16
+## 
+## Matrix products: default
+## BLAS:   /Library/Frameworks/R.framework/Versions/4.1/Resources/lib/libRblas.0.dylib
+## LAPACK: /Library/Frameworks/R.framework/Versions/4.1/Resources/lib/libRlapack.dylib
+## 
+## locale:
+## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+## 
+## attached base packages:
+## [1] stats     graphics  grDevices utils     datasets  methods   base     
+## 
+## other attached packages:
+##  [1] lubridate_1.8.0 forcats_0.5.1   stringr_1.4.0   dplyr_1.0.7    
+##  [5] purrr_0.3.4     readr_2.1.1     tidyr_1.1.4     tibble_3.1.6   
+##  [9] ggplot2_3.3.5   tidyverse_1.3.1 knitr_1.37     
+## 
+## loaded via a namespace (and not attached):
+##  [1] tidyselect_1.1.1 xfun_0.29        bslib_0.3.1      haven_2.4.3     
+##  [5] colorspace_2.0-2 vctrs_0.3.8      generics_0.1.1   htmltools_0.5.2 
+##  [9] yaml_2.2.1       utf8_1.2.2       rlang_0.4.12     jquerylib_0.1.4 
+## [13] pillar_1.6.4     withr_2.4.3      glue_1.6.0       DBI_1.1.2       
+## [17] bit64_4.0.5      dbplyr_2.1.1     modelr_0.1.8     readxl_1.3.1    
+## [21] lifecycle_1.0.1  munsell_0.5.0    gtable_0.3.0     cellranger_1.1.0
+## [25] rvest_1.0.2      evaluate_0.14    tzdb_0.2.0       fastmap_1.1.0   
+## [29] parallel_4.1.2   fansi_0.5.0      highr_0.9        broom_0.7.11    
+## [33] Rcpp_1.0.7       backports_1.4.1  scales_1.1.1     vroom_1.5.7     
+## [37] jsonlite_1.7.2   bit_4.0.4        fs_1.5.2         hms_1.1.1       
+## [41] digest_0.6.29    stringi_1.7.6    grid_4.1.2       cli_3.1.0       
+## [45] tools_4.1.2      magrittr_2.0.1   sass_0.4.0       crayon_1.4.2    
+## [49] pkgconfig_2.0.3  ellipsis_0.3.2   xml2_1.3.3       reprex_2.0.1    
+## [53] rstudioapi_0.13  assertthat_0.2.1 rmarkdown_2.11   httr_1.4.2      
+## [57] R6_2.5.1         compiler_4.1.2
+```
+ -->
+</div>
+
+<br>
+<br>
+
+<p align="center" style="color:#bababa;"><i>Copyright &copy; 2020 Luka Negoita</i></p>
+<br>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
