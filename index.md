@@ -78,7 +78,7 @@ While working at the Charles Darwin Foundation, I was commissioned to create an 
 </p>
 
 <center><img src="/images/amazon-books-plot-1.png"></center>
-I love books, and I know I've purchased way too many books from Amazon, so I figured that it might be interesting to visualize that purchase history. :)
+I love books, and I know I've purchased way too many books from Amazon, so I figured that might be a good source of data to visualize :)
 
 ---
 ## Can plant movement drive ecosystem function?
