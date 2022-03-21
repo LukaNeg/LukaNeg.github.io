@@ -18,9 +18,7 @@ description:
     I also run an online school where I teach <a href="https://www.rforecology.com">R for Ecology</a> :)
     </p>
   
-  <p align="center">
-  <i>I believe the fundamental beauty of the world lies in understanding the mechanisms behind the patterns that we see.</i>
-  </p>
-  
 theme: jekyll-theme-minimal
+
+
 # google_analytics: UA-145578661-1 # Google Analytics tracking ID
