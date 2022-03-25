@@ -39,6 +39,18 @@ Here's a tool I built with [Anna Calle](https://github.com/annagaby) (Charles Da
 I developed a Bayesian framework for evaluating the cost-effectivness and future total costs of different types of plant restoration methods in the Galapagos Islands, Ecuador. These results were immediately welcomed by the Charles Darwin Foundation and Galapagos National Park Directorate for optimizing future ecosystem restoration projects in the islands.
 
 ---
+## Finding Prime Numbers: a case study in algorithm optimization
+
+<p>
+<a href="/projects/Prime_Num_Optim.md" target="_blank"><img src = "https://img.shields.io/badge/Jupyter-Open%20Report-e34d3f?logo=python" alt = "Open Jupyter report"></a>
+
+<a href="https://github.com/LukaNeg/optimizing-python-code" target="_blank"><img src = "https://img.shields.io/badge/GitHub-View%20Repository-1077b8?logo=github" alt = "View Github Repository"></a>
+</p>
+
+<center><img src="/images/prime_num_thumb.png"></center>
+Here I code some simple scripts for finding prime numbers using Python, and explore ways to optimize these scripts to run much faster. Amazing the difference that the actual algorithm can make in run time for the same task!
+
+---
 ## Written multiple blog posts, tutorials, videos, and online courses about learning R
 
 <p>
