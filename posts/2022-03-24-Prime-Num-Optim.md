@@ -1,3 +1,8 @@
+---
+layout: post
+title:  "Finding Prime Numbers: a case study in algorithm optimization"
+---
+
 # Finding Prime Numbers: a case study in algorithm optimization
 
 ## Summary
