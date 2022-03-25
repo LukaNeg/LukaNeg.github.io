@@ -42,7 +42,7 @@ I developed a Bayesian framework for evaluating the cost-effectivness and future
 ## Finding Prime Numbers: a case study in algorithm optimization
 
 <p>
-<a href="/posts/Prime_Num_Optim.md" target="_blank"><img src = "https://img.shields.io/badge/Jupyter-Open%20Report-e34d3f?logo=python" alt = "Open Jupyter report"></a>
+<a href="/posts/portfolio-tutorial.md" target="_blank"><img src = "https://img.shields.io/badge/Jupyter-Open%20Report-e34d3f?logo=python" alt = "Open Jupyter report"></a>
 
 <a href="https://github.com/LukaNeg/optimizing-python-code" target="_blank"><img src = "https://img.shields.io/badge/GitHub-View%20Repository-1077b8?logo=github" alt = "View Github Repository"></a>
 </p>
