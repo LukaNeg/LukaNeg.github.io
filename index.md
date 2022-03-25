@@ -5,7 +5,7 @@
 ## Predicting the arrival of COVID-19 to the Galapagos Islands
 
 <p>
-<a href="/posts/coronavirus_analysis_v4.html" target="_blank"><img src = "https://img.shields.io/badge/RMarkdown-Open%20Report-e34d3f?logo=r" alt = "Open R Markdown report"></a>
+<a href="/projects/coronavirus_analysis_v4.html" target="_blank"><img src = "https://img.shields.io/badge/RMarkdown-Open%20Report-e34d3f?logo=r" alt = "Open R Markdown report"></a>
 
 <a href="https://github.com/LukaNeg/coronavirus_analysis" target="_blank"><img src = "https://img.shields.io/badge/GitHub-View%20Repository-1077b8?logo=github" alt = "View Github Repository"></a>
 </p>
