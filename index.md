@@ -12,7 +12,7 @@
 </p>
 
 <center><img src="/images/exploring-CGMs.png"></center>
-Here I explored the data of Hall et al. 2018 with the goal of learning more about CGM data. I applied Irina Gayanova's CGM metrics to Hall et al's dataset and found a way to predict the same glucotypes that Hall et al. established, but while using Gayanova's CGM metrics. The best solution I found (with 87% accuracy) was using PCA to reduce all the metrics to just a few components that I then fit with a boosted decision tree model.
+Here I explored the data of Hall et al. 2018 with the goal of learning more about CGM data. I applied Irina Gayanova's CGM metrics to Hall et al's dataset and found a way to predict the same glucotypes that Hall et al. established, but while using Gayanova's CGM metrics. The best solution I found (with 87% accuracy) was using PCA to reduce all the metrics to just a few components that I then fit with a boosted decision tree model. <a href="https://img.shields.io/badge/RMarkdown-Open%20Report-e34d3f?logo=r" target="_blank">Click here to view the project.</a>
 
 ---
 
