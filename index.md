@@ -2,6 +2,21 @@
 
 <!-- https://chriskhanhtran.github.io/_posts/2020-01-13-portfolio-tutorial/ -->
 ---
+
+## Exploring Continuous Glucose Monitoring data to predict 'glucotypes'
+
+<p>
+<a href="/projects/Exploring-CGM-Data.html" target="_blank"><img src = "https://img.shields.io/badge/RMarkdown-Open%20Report-e34d3f?logo=r" alt = "Open R Markdown report"></a>
+
+<a href="https://github.com/LukaNeg/CGM-exploration" target="_blank"><img src = "https://img.shields.io/badge/GitHub-View%20Repository-1077b8?logo=github" alt = "View Github Repository"></a>
+</p>
+
+<center><img src="/images/coronavirus_thumb.png"></center>
+Here I explored the data of Hall et al. 2018 with the goal of learning more about CGM data. I applied Irina Gayanova's CGM metrics to Hall et al's dataset and found a way to predict the same glucotypes that Hall et al. established, but while using Gayanova's CGM metrics. The best solution I found (with 87% accuracy) was using PCA to reduce all the metrics to just a few components that I then fit with a boosted decision tree model.
+
+---
+
+
 ## Predicting the arrival of COVID-19 to the Galapagos Islands
 
 <p>
