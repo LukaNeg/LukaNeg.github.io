@@ -3,6 +3,16 @@
 <!-- https://chriskhanhtran.github.io/_posts/2020-01-13-portfolio-tutorial/ -->
 ---
 
+## How many days in advance should you be booking your Airbnb?
+
+<p>
+<a href="/projects/exploring-airbnb-avail-price.html" target="_blank"><img src = "https://img.shields.io/badge/RMarkdown-Open%20Report-e34d3f?logo=r" alt = "Open R Markdown report"></a>
+
+<center><img src="/images/airbnb_price_and_availability.png"></center>
+Here I explored available Airbnb data on pricing and availability. In the process I came up with a visualization for understanding how many days in advance you should be booking your Airbnb rental. <a href="/projects/exploring-airbnb-avail-price.html" target="_blank">Click here to view the project.</a>
+
+---
+
 ## Exploring Continuous Glucose Monitoring data to predict 'glucotypes'
 
 <p>
