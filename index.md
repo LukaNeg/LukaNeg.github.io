@@ -43,6 +43,17 @@ I was able to predict the arrival of COVID-19 to the local community of the Gala
 
 ---
 
+## Exploring temporal data with airbnb seasonal availability
+
+<p>
+<a href="/projects/airbnb-through-the-seasons.html" target="_blank"><img src = "https://img.shields.io/badge/RMarkdown-Open%20Report-e34d3f?logo=r" alt = "Open R Markdown report"></a>
+</p>
+
+<center><img src="/images/airbnb-through-the-seasons-fig.png"></center>
+Here I explored available Airbnb data to try to understand differences in booking availability throughout the year. This was a fun project requiring a lot of data work to extract signal from the noise. <a href="/projects/airbnb-through-the-seasons.html" target="_blank">Click here to view the project.</a>
+
+---
+
 ## RestoR: an app for managing biodiversity restoration
 
 <p>
