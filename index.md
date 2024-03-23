@@ -13,6 +13,7 @@ Here I explored available Airbnb data on pricing and availability. In the proces
 
 ---
 
+
 ## Exploring Continuous Glucose Monitoring data to predict 'glucotypes'
 
 <p>
